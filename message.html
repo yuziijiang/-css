@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>用户信息</title>
+	 <link rel="shortcut icon" href="images/1.ico">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/style.css" style="text/css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+</head>
+<style>
+	 *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: red;
+    background-image: linear-gradient(to bottom right, red , yellow);
+}
+
+    .carousel-inner .item .img{
+        min-width: 100%;
+        height:602px;
+    }
+    .carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+    .container{
+        text-align:center;
+         float: center;
+    }
+    /* .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+    margin-right: -700px;
+}*/
+* {
+  box-sizing: border-box;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+ /* background-color:  #f2f2f2;*/
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<body>
+	
+	 <nav class="navbar">
+        <div class="container">
+            <img src="images/logo.png" width="120px">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle btn-lg" data-toggle="collapse" data-target="#navcollapse">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+            </div>
+            <div id="navcollapse" class="collapse navbar-collapse">
+                <ul class="nav nav-pills" id="navbar">
+                    <li class="active col-xs-12  col-md-3"><a href="index.html">首页</a></li>
+                    <li class="col-xs-12 col-md-2"><a href="about.html">作品说明</a></li>
+                    <li class="col-xs-12 col-md-2"><a href="message.html">用户信息</a></li>
+                     </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    	<br>
+            	 	<h2 style="text-align: center;"	>联系我</h2>
+            	 	<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="name" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">E-Mail</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your E-Mail..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Like</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="shouye">Which do you like best..</option>
+        <option value="shouye">首页</option>
+        <option value="jieshao">作品说明</option>
+        <option value="sheji">用户信息</option>
+      
+      </select>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+    结束时间：<input type="date">
+    <td colspan="2">上传附件<input type="file" name="file" multiple="multiple"></td></p>
+</tr>
+  </div>
+  </form>
+</div>
+<footer class="container">
+        <div class="snsicon "></div>
+        <ul class="nav navbar">
+            <li class="col-xs-12 col-md-3">
+                <a type="button" data-toggle="modal" data-target="#myModal">作品说明</a>
+                <div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h3 class="modal-title" id="myModalLabel">作品说明</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>建党99周年——峥嵘岁月，不忘初心</p>
+                                <b>1921年，在嘉兴南湖的红船上，中国共产党诞生，中国革命的面貌焕然一新。99年来，中国共产党初心不改，以人民至上的价值理念为中国人民谋幸福，也展现出计利天下的国际胸怀。</b>
+                                <p>2020年是中国共产党99周年华诞，是全面建成小康社会和“十三五”规划收官之年。中国共产党团结带领中国人民，众志成城，克服挑战，坚定向宏伟目标奋进，并在世界舞台上贡献中国智慧、中国方案和中国力量，推动构建人类命运共同体，体现中国负责任大国的担当。</p>
+                                <img src="images/pro1.jpg" height="240px" width="320px">
+                                <br>图1 节日历史
+                                <p>把7月1日作为中国共产党的诞辰纪念日，是毛泽东同志于1938年5月提出来的。 当时，毛泽东在《论持久战》一文中提出：“今年七月一日，是中国共产党建立的十七周年纪念日”。 这是中央领导同志第一次明确提出“七一”是党的诞生纪念日。</p>
+                                <br><img src="images/pro2.jpg" height="240px" width="320px">
+                                <br>图2 党的发展历程重要事件回顾
+                                <p>最早提出“中国共产党”这一名称的是蔡和森。1920年8月13日和9月16日，正在留法勤工俭学的他，在给毛泽东写的两封信中，详细地研讨了共产党问题，提出：“先要组织党——共产党，因为它是革命运动的发动者、宣传者、先锋队、作战部。”他在对西欧各国共产党特别是俄国共产党考察的基础上，提出了具体的建党步骤，其中包括“明目张胆正式成立一个中国共产党”。在此前后，陈独秀在上海，李大钊、张申府在北京也通过信函讨论了党的名称问题，决定采用“共产党”作为中国无产阶级政党的名称。</p>
+                                <br><img src="images/pro3.jpg" height="240px" width="320px">
+                                <br>图3 五四运动
+                                <p>1919年1月“巴黎和会”决定将战败的德国在山东的特权转交给日本，消息传到国内，群情激愤。5月4日，3000多名北京爱国学生在天安门举行示威游行，掀起了全国规模的反帝爱国运动。这就是著名的五四爱国运动。五四运动标志着中国新民主主义革命的伟大开端，促进了马克思主义在中国的传播及其与工人运动相结合。</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-xs-12 col-md-3">
+                <a href="message.html">用户信息</a>
+            </li>
+            <li class="col-xs-12 col-md-3">
+                <a href=" index.html" title=" ">首页</a>
+            </li>
+             </ul>
+              <div class="snsqrcode "></div>
+        <div class="copyright "></div>
+    </footer>
+    <!-- /footer -->
+    </div>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+</body>
+
+<script>
+$(function() {
+    //第五步：利用ID在JS中启用轮播图，可以设置三个参数interval（轮播切换时间）、pause（默认hover即鼠标悬停时停止播放）、wrap（默认true，持续循环）
+    $('#myCarousel').carousel({
+        interval: 3000,
+    });
+
+    var imgHeight = $('.carousel-inner img').height();
+    //设置垂直居中
+    $('.carousel-control').css('line-height', imgHeight + 'px');
+
+    //设置窗口变化时自动响应垂直居中
+    $(window).resize(function() {
+        var height = $('.carousel-inner img').eq(0).height() || $('.carousel-inner img').eq(1).height() || $('.carousel-inner img').eq(2).height();
+        $('.carousel-control').css('line-height', height + 'px');
+    });
+    //$('#myModal').modal();
+
+});
+</script>
+
+</body>
+</html>

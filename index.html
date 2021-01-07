@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>建党99周年主题展示</title>
+    <link rel="shortcut icon" href="images/1.ico">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/style.css" style="text/css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+</head>
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: red;
+    background-image: linear-gradient(to right, red , yellow);
+}
+    .carousel-inner .item .img{
+        min-width: 100%;
+        height:602px;
+    }
+    .carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+    .container{
+        text-align:center;
+         float: center;
+    }
+  /*   .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+    margin-right: -700px;
+}
+*/
+    </style>
+
+<body>
+
+    <!-- navigator -->
+    <nav class="navbar">
+        <div class="container">
+            <img src="images/logo.png" width="120px">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle btn-lg" data-toggle="collapse" data-target="#navcollapse">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+            </div>
+            <div id="navcollapse" class="collapse navbar-collapse">
+                <ul class="nav nav-pills" id="navbar">
+                    <li class="active col-xs-12  col-md-3"><a href="index.html">首页</a></li>
+                    <li class="col-xs-12 col-md-2"><a href="about.html">作品说明</a></li>
+                    <li class="col-xs-12 col-md-2"><a href="message.html">用户信息</a></li>
+                   <!--  <li class="col-xs-12 col-md-2"><a href="#">活动征集</a></li>
+                    <li class="col-xs-12 col-md-2"><a href="#">星云摄简介</a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /navigator -->
+    <!-- banner -->
+    <div id="myCarousel" class="carousel slide">
+        <!--第一步：设计轮播图片的容器,用ID和css同时确定。-->
+        <ol class="carousel-indicators">
+            <!--第二步：设计轮播图片计数器。-->
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1">
+            </li>
+            <li data-target="#myCarousel" data-slide-to="2">
+            </li>
+        </ol>
+        <div class="carousel-inner">
+            <!--第三步：设计轮播图片播放区,使用 carousel-inner 样式来控制-->
+            <div class="item active"><img src="images/banner1.jpg" alt="建党99周年"></div>
+            <div class="item"><img src="images/banner2.jpg" alt="建党99周年 ">
+            </div>
+            <div class="item"><img src="images/banner3.jpg" alt="建党99周年 "></div>
+        </div>
+        <!--第四步：设计轮播图片控制器。向前播放 carousel-control left和向后播放的控制器-->
+        <a href="#myCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+        <a href="#myCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+    </div>
+    <!-- /banner -->
+    <!-- content -->
+    <div class="container">
+        <!-- 最新作品 -->
+       <!--  <div class="content picture">
+            <h2>最新作品</h2>我们是青春岁月的忠实记录者，我们创作走心的艺术作品
+            <div class="content-inner">
+                <div class="col-xs-12 col-md-4">
+                    <img src="images/pro1.jpg">
+                    <br> 校园采风
+                    <br>是否，有一个熟悉的角落成为你未知的风景 却能唤起你心中那首熟悉的歌？
+                </div>
+                <div class="col-xs-12 col-md-4"><img src="images/pro2.jpg">
+                    <br> 情侣晒图
+                    <br> 万千美丽，不及相互对望一笑。 记录你和TA美好的瞬间，快快晒出你的幸福
+                </div>
+                <div class="col-xs-12 col-md-4"><img src="images/pro3.jpg">
+                    <br> 闺蜜情谊
+                    <br>你了解我所有对的东西，也知道我所有丢脸的事情 我想告诉全世界，遇见你是最美好的事情。
+                </div>
+            </div>
+        </div> -->
+        <!-- 最新活动 -->
+     <!--    <div class="content activity">
+            <h2>最新活动</h2>娉婷少女，豆蔻枝头，蓝天里那朵跳动的白云，那不就是青春的模样吗？
+            <div class="content-inner">
+                <div class="col-md-4"><img src="images/act1.jpg"></div>
+                <div class="col-md-4"><img src="images/act2.jpg"></div>
+                <div class="col-md-4"><img src="images/act3.jpg"></div>
+            </div>
+        </div> -->
+        <!-- 互动有礼 -->
+       <!--  <div class="content gift">
+            <h2>互动有礼</h2>没有铺天盖地的广告，没有浮夸的促销价格，因为有你，我们更生动
+            <div class="content-inner ">
+                <div class="col-md-4"><img src="images/gif1.jpg"></div>
+                <div class="col-md-4"><img src="images/gif2.jpg"></div>
+                <div class="col-md-4"><img src="images/gif3.jpg"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- /content -->
+    <!-- footer 模态框组件-->
+    <footer class="container">
+        <div class="snsicon "></div>
+        <ul class="nav navbar">
+            <li class="col-xs-12 col-md-3">
+                <a type="button" data-toggle="modal" data-target="#myModal">作品说明</a>
+                <div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h3 class="modal-title" id="myModalLabel">作品说明</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>建党99周年——峥嵘岁月，不忘初心</p>
+                                <b>1921年，在嘉兴南湖的红船上，中国共产党诞生，中国革命的面貌焕然一新。99年来，中国共产党初心不改，以人民至上的价值理念为中国人民谋幸福，也展现出计利天下的国际胸怀。</b>
+                                <p>2020年是中国共产党99周年华诞，是全面建成小康社会和“十三五”规划收官之年。中国共产党团结带领中国人民，众志成城，克服挑战，坚定向宏伟目标奋进，并在世界舞台上贡献中国智慧、中国方案和中国力量，推动构建人类命运共同体，体现中国负责任大国的担当。</p>
+                                <img src="images/pro1.jpg" height="240px" width="320px">
+                                <br>图1 节日历史
+                                <p>把7月1日作为中国共产党的诞辰纪念日，是毛泽东同志于1938年5月提出来的。 当时，毛泽东在《论持久战》一文中提出：“今年七月一日，是中国共产党建立的十七周年纪念日”。 这是中央领导同志第一次明确提出“七一”是党的诞生纪念日。</p>
+                                <br><img src="images/pro2.jpg" height="240px" width="320px">
+                                <br>图2 党的发展历程重要事件回顾
+                                <p>最早提出“中国共产党”这一名称的是蔡和森。1920年8月13日和9月16日，正在留法勤工俭学的他，在给毛泽东写的两封信中，详细地研讨了共产党问题，提出：“先要组织党——共产党，因为它是革命运动的发动者、宣传者、先锋队、作战部。”他在对西欧各国共产党特别是俄国共产党考察的基础上，提出了具体的建党步骤，其中包括“明目张胆正式成立一个中国共产党”。在此前后，陈独秀在上海，李大钊、张申府在北京也通过信函讨论了党的名称问题，决定采用“共产党”作为中国无产阶级政党的名称。</p>
+                                <br><img src="images/pro3.jpg" height="240px" width="320px">
+                                <br>图3 五四运动
+                                <p>1919年1月“巴黎和会”决定将战败的德国在山东的特权转交给日本，消息传到国内，群情激愤。5月4日，3000多名北京爱国学生在天安门举行示威游行，掀起了全国规模的反帝爱国运动。这就是著名的五四爱国运动。五四运动标志着中国新民主主义革命的伟大开端，促进了马克思主义在中国的传播及其与工人运动相结合。</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-xs-12 col-md-3">
+                <a href="message.html">用户信息</a>
+            </li>
+            <li class="col-xs-12 col-md-3">
+                <a href="index.html " title=" ">首页</a>
+            </li>
+            <!-- <li class="col-xs-12 col-md-3">
+                <a href=" " title=" ">帮助中心</a>
+            </li> -->
+        </ul>
+        <div class="snsqrcode "></div>
+        <div class="copyright "></div>
+    </footer>
+    <!-- /footer -->
+    </div>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+</body>
+
+<script>
+$(function() {
+    //第五步：利用ID在JS中启用轮播图，可以设置三个参数interval（轮播切换时间）、pause（默认hover即鼠标悬停时停止播放）、wrap（默认true，持续循环）
+    $('#myCarousel').carousel({
+        interval: 3000,
+    });
+
+    var imgHeight = $('.carousel-inner img').height();
+    //设置垂直居中
+    $('.carousel-control').css('line-height', imgHeight + 'px');
+
+    //设置窗口变化时自动响应垂直居中
+    $(window).resize(function() {
+        var height = $('.carousel-inner img').eq(0).height() || $('.carousel-inner img').eq(1).height() || $('.carousel-inner img').eq(2).height();
+        $('.carousel-control').css('line-height', height + 'px');
+    });
+    //$('#myModal').modal();
+
+});
+</script>
+
+</html>
